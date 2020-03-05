@@ -151,7 +151,7 @@ http_request = function (request, response) {
         }
 
         if (fs.statSync(filename).isDirectory()) {
-            filename += '/index.html';
+            filename += '/vnc.html';
         }
 
         fs.readFile(filename, "binary", function(err, file) {
